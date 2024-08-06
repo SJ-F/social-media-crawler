@@ -1,0 +1,524 @@
+{
+    "min_delay_in_seconds": 1,
+    "max_delay_in_seconds": 5,
+    
+    "teams": [
+        {
+            "name": "German Football League",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "",
+            "location": "",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Berlin Adler",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Berlin",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Berlin Rebels",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Berlin",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Dresden Monarchs",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Dresden",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Hildesheim Invaders",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Hildesheim",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Kiel Baltic Hurricanes",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Kiel",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "New Yorker Lions",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Braunschweig",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Paderborn Dolphins",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Paderborn",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Potsdam Royals",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Nord",
+            "location": "Potsdam",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Allgäu Comets",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Kempten",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "ifm Razorbacks",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Ravensburg",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Kirchdorf Wildcats",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Kirchdorf (Inn)",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Munich Cowboys",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "München",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Saarland Hurricanes",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Saarbrücken",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Schwäbisch Hall Unicorns",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Schwäbisch Hall",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Straubing Spiders",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Straubing",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Bielefeld Bulldogs",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Bielefeld",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Cottbus Crayfish",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Cottbus",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Düsseldorf Panther",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Düsseldorf",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Hamburg Pioneers",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Hamburg",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Langenfeld Longhorns",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Langenfeld",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Lübeck Cougars",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Lübeck",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Oldenburg Knights",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Oldenburg",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Rostock Griffins",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Nord",
+            "location": "Rostock",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Albershausen Crusaders",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Süd",
+            "location": "Albershausen",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Fursty Razorbacks",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Süd",
+            "location": "Fürstenfeldbruck",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Gießen Golden Dragons",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Süd",
+            "location": "Gießen",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Montabaur Fighting Farmers",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Süd",
+            "location": "Montabaur",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Pforzheim Wilddogs",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Süd",
+            "location": "Pforzheim",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Regensburg Phoenix",
+            "sport": "American Football",
+            "league": "GFL2",
+            "division": "Süd",
+            "location": "Regensburg",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_a",
+                "facebook_url": "https://facebook.com/team_a",
+                "youtube_url": "https://youtube.com/team_a",
+                "tiktok_url": "https://tiktok.com/@team_a"
+            }
+        },
+        {
+            "name": "Ravensburg Towerstars",
+            "sport": "Eishockey",
+            "league": "DEL",
+            "division": "-",
+            "location": "Ravensburg",
+            "social_media": {
+                "instagram_url": "https://instagram.com/team_b",
+                "facebook_url": "https://facebook.com/team_b",
+                "youtube_url": "https://youtube.com/team_b",
+                "tiktok_url": "https://tiktok.com/@team_b"
+            }
+        }
+    ],
+    "locations": [
+        {
+            "name": "Berlin",
+            "wikipedia_url": "Berlin"
+        },
+        {
+            "name": "Dresden",
+            "wikipedia_url": "Dresden"
+        },
+        {
+            "name": "Hildesheim",
+            "wikipedia_url": "Hildesheim"
+        },
+        {
+            "name": "Kiel",
+            "wikipedia_url": "Kiel"
+        },
+        {
+            "name": "Braunschweig",
+            "wikipedia_url": "Braunschweig"
+        },
+        {
+            "name": "Paderborn",
+            "wikipedia_url": "Paderborn"
+        },
+        {
+            "name": "Potsdam",
+            "wikipedia_url": "Potsdam"
+        },
+        {
+            "name": "Kempten",
+            "wikipedia_url": "Kempten"
+        },
+        {
+            "name": "Ravensburg",
+            "wikipedia_url": "Ravensburg"
+        },
+        {
+            "name": "Kirchdorf",
+            "wikipedia_url": "Kirchdorf_am_Inn_(Landkreis_Rottal-Inn)"
+        },
+        {
+            "name": "München",
+            "wikipedia_url": "München"
+        },
+        {
+            "name": "Saarbrücken",
+            "wikipedia_url": "Saarbrücken"
+        },
+        {
+            "name": "Schwäbisch Hall",
+            "wikipedia_url": "Schwäbisch_Hall"
+        },
+        {
+            "name": "Straubing",
+            "wikipedia_url": "Straubing"
+        },
+        {
+            "name": "Bielefeld",
+            "wikipedia_url": "Bielefeld"
+        },
+        {
+            "name": "Cottbus",
+            "wikipedia_url": "Cottbus"
+        },
+        {
+            "name": "Düsseldorf",
+            "wikipedia_url": "Düsseldorf"
+        },
+        {
+            "name": "Hamburg",
+            "wikipedia_url": "Hamburg"
+        },
+        {
+            "name": "Langenfeld",
+            "wikipedia_url": "Langenfeld"
+        },
+        {
+            "name": "Lübeck",
+            "wikipedia_url": "Lübeck"
+        },
+        {
+            "name": "Oldenburg",
+            "wikipedia_url": "Oldenburg"
+        },
+        {
+            "name": "Rostock",
+            "wikipedia_url": "Rostock"
+        },
+        {
+            "name": "Albershausen",
+            "wikipedia_url": "Albershausen"
+        },
+        {
+            "name": "Fürstenfeldbruck",
+            "wikipedia_url": "Fürstenfeldbruck"
+        },
+        {
+            "name": "Gießen",
+            "wikipedia_url": "Gießen"
+        },
+        {
+            "name": "Montabaur",
+            "wikipedia_url": "Montabaur"
+        },
+        {
+            "name": "Pforzheim",
+            "wikipedia_url": "Pforzheim"
+        },
+        {
+            "name": "Regensburg",
+            "wikipedia_url": "Regensburg"
+        }
+    ]
+}

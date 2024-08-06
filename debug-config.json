@@ -1,0 +1,38 @@
+{
+    "min_delay_in_seconds": 1,
+    "max_delay_in_seconds": 5,
+    
+    "teams": [
+        {
+            "name": "Allgäu Comets",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Kempten",
+            "social_media": {
+                "instagram": "allgaeucomets"
+            }
+        },
+        {
+            "name": "ifm Razorbacks",
+            "sport": "American Football",
+            "league": "GFL",
+            "division": "Süd",
+            "location": "Ravensburg",
+            "social_media": {
+                "instagram": "ifmrazorbacks",
+                "facebook": "ifmrazorbacks"
+            }
+        }
+    ],
+    "locations": [
+        {
+            "name": "Kempten",
+            "wikipedia_url": "Kempten"
+        },
+        {
+            "name": "Ravensburg",
+            "wikipedia_url": "Ravensburg"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Allgäu Comets",
+        "sport": "American Football",
+        "league": "GFL",
+        "division": "Süd",
+        "location": "Kempten",
+        "instagram": {
+            "profile": "allgaeucomets",
+            "follower": 6350,
+            "posts": 840
+        }
+    },
+    {
+        "name": "ifm Razorbacks",
+        "sport": "American Football",
+        "league": "GFL",
+        "division": "Süd",
+        "location": "Ravensburg",
+        "instagram": {
+            "profile": "ifmrazorbacks",
+            "follower": 6900,
+            "posts": 890
+        },
+        "facebook": {
+            "profile": "ifmrazorbacks",
+            "follower": 8500
+        }
+    }
+]
