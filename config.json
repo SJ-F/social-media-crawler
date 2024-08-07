@@ -10,10 +10,10 @@
             "division": "",
             "location": "",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -23,10 +23,10 @@
             "division": "Nord",
             "location": "Berlin",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -36,10 +36,10 @@
             "division": "Nord",
             "location": "Berlin",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -49,10 +49,10 @@
             "division": "Nord",
             "location": "Dresden",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -62,10 +62,10 @@
             "division": "Nord",
             "location": "Hildesheim",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -75,10 +75,10 @@
             "division": "Nord",
             "location": "Kiel",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -88,10 +88,10 @@
             "division": "Nord",
             "location": "Braunschweig",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -101,10 +101,10 @@
             "division": "Nord",
             "location": "Paderborn",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -114,10 +114,10 @@
             "division": "Nord",
             "location": "Potsdam",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -127,10 +127,10 @@
             "division": "Süd",
             "location": "Kempten",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -140,10 +140,10 @@
             "division": "Süd",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -153,10 +153,10 @@
             "division": "Süd",
             "location": "Kirchdorf (Inn)",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -166,10 +166,10 @@
             "division": "Süd",
             "location": "München",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -179,10 +179,10 @@
             "division": "Süd",
             "location": "Saarbrücken",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -192,10 +192,10 @@
             "division": "Süd",
             "location": "Schwäbisch Hall",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -205,10 +205,10 @@
             "division": "Süd",
             "location": "Straubing",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -218,10 +218,10 @@
             "division": "Nord",
             "location": "Bielefeld",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -231,10 +231,10 @@
             "division": "Nord",
             "location": "Cottbus",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -244,10 +244,10 @@
             "division": "Nord",
             "location": "Düsseldorf",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -257,10 +257,10 @@
             "division": "Nord",
             "location": "Hamburg",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -270,10 +270,10 @@
             "division": "Nord",
             "location": "Langenfeld",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -283,10 +283,10 @@
             "division": "Nord",
             "location": "Lübeck",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -296,10 +296,10 @@
             "division": "Nord",
             "location": "Oldenburg",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -309,10 +309,10 @@
             "division": "Nord",
             "location": "Rostock",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -322,10 +322,10 @@
             "division": "Süd",
             "location": "Albershausen",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -335,10 +335,10 @@
             "division": "Süd",
             "location": "Fürstenfeldbruck",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -348,10 +348,10 @@
             "division": "Süd",
             "location": "Gießen",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -361,10 +361,10 @@
             "division": "Süd",
             "location": "Montabaur",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -374,10 +374,10 @@
             "division": "Süd",
             "location": "Pforzheim",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -387,10 +387,10 @@
             "division": "Süd",
             "location": "Regensburg",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_a",
-                "facebook_url": "https://facebook.com/team_a",
-                "youtube_url": "https://youtube.com/team_a",
-                "tiktok_url": "https://tiktok.com/@team_a"
+                "instagram": "https://instagram.com/team_a",
+                "facebook": "https://facebook.com/team_a",
+                "youtube": "https://youtube.com/team_a",
+                "tiktok": "https://tiktok.com/@team_a"
             }
         },
         {
@@ -400,125 +400,125 @@
             "division": "-",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "https://instagram.com/team_b",
-                "facebook_url": "https://facebook.com/team_b",
-                "youtube_url": "https://youtube.com/team_b",
-                "tiktok_url": "https://tiktok.com/@team_b"
+                "instagram": "https://instagram.com/team_b",
+                "facebook": "https://facebook.com/team_b",
+                "youtube": "https://youtube.com/team_b",
+                "tiktok": "https://tiktok.com/@team_b"
             }
         }
     ],
     "locations": [
         {
             "name": "Berlin",
-            "wikipedia_url": "Berlin"
+            "wikipedia": "Berlin"
         },
         {
             "name": "Dresden",
-            "wikipedia_url": "Dresden"
+            "wikipedia": "Dresden"
         },
         {
             "name": "Hildesheim",
-            "wikipedia_url": "Hildesheim"
+            "wikipedia": "Hildesheim"
         },
         {
             "name": "Kiel",
-            "wikipedia_url": "Kiel"
+            "wikipedia": "Kiel"
         },
         {
             "name": "Braunschweig",
-            "wikipedia_url": "Braunschweig"
+            "wikipedia": "Braunschweig"
         },
         {
             "name": "Paderborn",
-            "wikipedia_url": "Paderborn"
+            "wikipedia": "Paderborn"
         },
         {
             "name": "Potsdam",
-            "wikipedia_url": "Potsdam"
+            "wikipedia": "Potsdam"
         },
         {
             "name": "Kempten",
-            "wikipedia_url": "Kempten"
+            "wikipedia": "Kempten"
         },
         {
             "name": "Ravensburg",
-            "wikipedia_url": "Ravensburg"
+            "wikipedia": "Ravensburg"
         },
         {
             "name": "Kirchdorf",
-            "wikipedia_url": "Kirchdorf_am_Inn_(Landkreis_Rottal-Inn)"
+            "wikipedia": "Kirchdorf_am_Inn_(Landkreis_Rottal-Inn)"
         },
         {
             "name": "München",
-            "wikipedia_url": "München"
+            "wikipedia": "München"
         },
         {
             "name": "Saarbrücken",
-            "wikipedia_url": "Saarbrücken"
+            "wikipedia": "Saarbrücken"
         },
         {
             "name": "Schwäbisch Hall",
-            "wikipedia_url": "Schwäbisch_Hall"
+            "wikipedia": "Schwäbisch_Hall"
         },
         {
             "name": "Straubing",
-            "wikipedia_url": "Straubing"
+            "wikipedia": "Straubing"
         },
         {
             "name": "Bielefeld",
-            "wikipedia_url": "Bielefeld"
+            "wikipedia": "Bielefeld"
         },
         {
             "name": "Cottbus",
-            "wikipedia_url": "Cottbus"
+            "wikipedia": "Cottbus"
         },
         {
             "name": "Düsseldorf",
-            "wikipedia_url": "Düsseldorf"
+            "wikipedia": "Düsseldorf"
         },
         {
             "name": "Hamburg",
-            "wikipedia_url": "Hamburg"
+            "wikipedia": "Hamburg"
         },
         {
             "name": "Langenfeld",
-            "wikipedia_url": "Langenfeld"
+            "wikipedia": "Langenfeld"
         },
         {
             "name": "Lübeck",
-            "wikipedia_url": "Lübeck"
+            "wikipedia": "Lübeck"
         },
         {
             "name": "Oldenburg",
-            "wikipedia_url": "Oldenburg"
+            "wikipedia": "Oldenburg"
         },
         {
             "name": "Rostock",
-            "wikipedia_url": "Rostock"
+            "wikipedia": "Rostock"
         },
         {
             "name": "Albershausen",
-            "wikipedia_url": "Albershausen"
+            "wikipedia": "Albershausen"
         },
         {
             "name": "Fürstenfeldbruck",
-            "wikipedia_url": "Fürstenfeldbruck"
+            "wikipedia": "Fürstenfeldbruck"
         },
         {
             "name": "Gießen",
-            "wikipedia_url": "Gießen"
+            "wikipedia": "Gießen"
         },
         {
             "name": "Montabaur",
-            "wikipedia_url": "Montabaur"
+            "wikipedia": "Montabaur"
         },
         {
             "name": "Pforzheim",
-            "wikipedia_url": "Pforzheim"
+            "wikipedia": "Pforzheim"
         },
         {
             "name": "Regensburg",
-            "wikipedia_url": "Regensburg"
+            "wikipedia": "Regensburg"
         }
     ]
 }

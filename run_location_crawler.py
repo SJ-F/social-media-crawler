@@ -1,8 +1,11 @@
+# pylint: disable=broad-exception-caught
+
 import os
 import logging
 import json
 import time
 import random
+
 import requests
 
 from dataclasses import dataclass
@@ -21,13 +24,14 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 @dataclass
 class Location:
     name: str
-    wikipedia_url: str
+    wikipedia: str
+
 
 class ConfigHandler:
     def __init__(self, file_path: str):
-        self.locations = []
-        self.min_delay_in_seconds = 0
-        self.max_delay_in_seconds = 0
+        self.locations: list[Location] = []
+        self.min_delay_in_seconds: int = 0
+        self.max_delay_in_seconds: int = 0
         self.load_config(file_path)
 
     def __str__(self) -> str:
@@ -38,7 +42,7 @@ class ConfigHandler:
     def load_config(self, file_name: str):
         script_dir = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(script_dir, file_name)
-        
+
         with open(file_path, 'r', encoding='utf-8') as file:
             config = json.load(file)
 
@@ -46,22 +50,22 @@ class ConfigHandler:
         self.max_delay_in_seconds = self.validate_config_value(config.get('max_delay_in_seconds'), "Maximum delay")
         self.load_locations(config.get('locations', []))
 
-    def validate_config_value(self, value, name: str):
+    def validate_config_value(self, value, name: str) -> int:
         if value is None:
             raise ValueError(f"{name} not found - crawling aborted.")
         return value
 
-    def load_locations(self, locations_data):
+    def load_locations(self, locations_data: list):
         if not locations_data:
             raise ValueError("No locations found - crawling aborted.")
 
         for location in locations_data:
             name = location.get('name')
-            wikipedia_url = location.get('wikipedia_url')
-            if not name or not wikipedia_url:
-                logging.error("Location '%s': name or wikipedia_url not found - crawling for this location skipped.", name)
+            wikipedia = location.get('wikipedia')
+            if not name or not wikipedia:
+                logging.error("Location '%s': name or wikipedia not found - crawling for this location skipped.", name)
             else:
-                self.locations.append(Location(name, wikipedia_url))
+                self.locations.append(Location(name, wikipedia))
 
 
 def idle_to_hide_crawling_bot(config: ConfigHandler):
@@ -82,35 +86,19 @@ def crawl_wikipedia(session: requests.Session, name: str, url: str):
         return None
 
 
-def crawl_locations(session: requests.Session, config: ConfigHandler):
-    """Crawl data from Wikipedia for all locations defined in the config."""
-    crawling_durations = []
-    crawled_data = []
+def log_crawling_progress(crawling_durations: list, config: ConfigHandler):
+    locations_left_for_crawling = len(config.locations) - len(crawling_durations)
+    logging.info("%s/%s locations crawled.", len(crawling_durations), len(config.locations))
 
-    for location in config.locations:
-        start_time = time.time()
+    if crawling_durations:
+        avg_duration = sum(crawling_durations) / len(crawling_durations)
+        time_left = int(locations_left_for_crawling * avg_duration)
+        if time_left > 0:
+            logging.info("Remaining runtime: %s", time_string(time_left))
 
-        # actual crawling happens here
-        # =====================================================================
-        location_data = crawl_wikipedia(session, location.name, location.wikipedia_url)
-        crawled_data.append(json.loads(location_data))
 
-        idle_to_hide_crawling_bot(config)
-        # =====================================================================
-
-        duration = time.time() - start_time
-        crawling_durations.append(duration)
-
-        locations_left_for_crawling = len(config.locations) - len(crawling_durations)
-        logging.info("%s/%s locations crawled.", len(crawling_durations), len(config.locations))
-
-        if crawling_durations:
-            avg_duration = sum(crawling_durations) / len(crawling_durations)
-            time_left = int(locations_left_for_crawling * avg_duration)
-            if time_left > 0:
-                logging.info("Remaining runtime: %s", time_string(time_left))
-
-    # Save all location data to a JSON file
+def save_crawled_data(crawled_data: list):
+    """Save all location data to a JSON file."""
     current_date = datetime.now().strftime("%Y%m%d")
     file_name = f"{current_date}_locations_crawl.json"
 
@@ -119,10 +107,33 @@ def crawl_locations(session: requests.Session, config: ConfigHandler):
 
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(crawled_data, f, ensure_ascii=False, indent=4)
-    logging.info("crawled location data saved to '%s'.", file_path)
+    logging.info("Crawled location data saved to '%s'.", file_path)
+
+
+def crawl_locations(session: requests.Session, config: ConfigHandler):
+    """Crawl data from Wikipedia for all locations defined in the config."""
+    crawling_durations = []
+    crawled_data = []
+
+    for location in config.locations:
+        start_time = time.time()
+
+        location_data = crawl_wikipedia(session, location.name, location.wikipedia)
+        if location_data:
+            crawled_data.append(json.loads(location_data))
+
+        idle_to_hide_crawling_bot(config)
+
+        duration = time.time() - start_time
+        crawling_durations.append(duration)
+
+        log_crawling_progress(crawling_durations, config)
+
+    save_crawled_data(crawled_data)
+
 
 # Load the config file and start crawling
-config = ConfigHandler(CONFIG_FILE_NAME)
+current_config = ConfigHandler(CONFIG_FILE_NAME)
+current_session = requests.Session()
 
-session = requests.Session()
-crawl_locations(session, config)
+crawl_locations(current_session, current_config)

@@ -22,22 +22,22 @@ class YoutubeCrawler:
         self.session = session
 
     def crawl(self, name: str, profile: str) -> str:
-        """Crawl data for a profile from Youtube."""
+        """Crawl data for a city from Wikipedia."""
         self.session.headers.update({'User-Agent': get_random_user_agent()})
         
         logging.info("Crawling data for '%s' from '%s'", name, BASE_URL + profile)
-        status_code = 200
+        return
 
-        if status_code == 200:
-            follower, posts = get_dummy_data()
+        response = self.session.get(BASE_URL + profile)
+
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.content, 'html.parser')
+            print(soup)
 
             result = {
-                "profile": profile,
-                "follower": follower,
-                "posts": posts
             }
 
             logging.info("Result: %s", result)
             return json.dumps(result, ensure_ascii=False)
 
-        logging.error("Failed to retrieve '%s'. Status code: %d", BASE_URL + profile, status_code)
+        logging.error("Failed to retrieve '%s'. Status code: %d", BASE_URL + profile, response.status_code)

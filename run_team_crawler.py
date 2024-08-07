@@ -1,18 +1,21 @@
+# pylint: disable=broad-exception-caught
+
 import os
 import logging
 import json
 import time
 import random
-import requests
 
 from dataclasses import dataclass, field
 from datetime import datetime
 
+from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
 from crawlers.instagram import InstagramCrawler
-from crawlers.facebook import FacebookCrawler
-from crawlers.youtube import YoutubeCrawler
-from crawlers.tiktok import TiktokCrawler
-from utils.time_format import split_seconds_into_hours_minutes_and_seconds as time_string
+from utils.user_agents import get_random_user_agent
 
 DATA_DIR_NAME = 'data'
 LOCATION_DIR_NAME = 'teams'
@@ -28,6 +31,7 @@ class SocialMedia:
     youtube: str
     tiktok: str
 
+
 @dataclass
 class Team:
     name: str
@@ -37,11 +41,12 @@ class Team:
     location: str
     social_media: SocialMedia = field(default_factory=SocialMedia)
 
+
 class ConfigHandler:
     def __init__(self, file_path: str):
-        self.teams = []
-        self.min_delay_in_seconds = 0
-        self.max_delay_in_seconds = 0
+        self.teams: list[Team] = []
+        self.min_delay_in_seconds: int = 0
+        self.max_delay_in_seconds: int = 0
         self.load_config(file_path)
 
     def __str__(self) -> str:
@@ -52,7 +57,7 @@ class ConfigHandler:
     def load_config(self, file_name: str):
         script_dir = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(script_dir, file_name)
-        
+
         with open(file_path, 'r', encoding='utf-8') as file:
             config = json.load(file)
 
@@ -60,34 +65,35 @@ class ConfigHandler:
         self.max_delay_in_seconds = self.validate_config_value(config.get('max_delay_in_seconds'), "Maximum delay")
         self.load_teams(config.get('teams', []))
 
-    def validate_config_value(self, value, name: str):
+    def validate_config_value(self, value, name: str) -> int:
         if value is None:
             raise ValueError(f"{name} not found - crawling aborted.")
         return value
 
-    def load_teams(self, teams_data):
+    def load_teams(self, teams_data: list):
         if not teams_data:
             raise ValueError("No teams found - crawling aborted.")
 
         for team in teams_data:
-            name = team.get('name')
-            sport = team.get('sport')
-            if not name or not sport:
-                logging.error("Team '%s': name or sport not found - crawling for this location skipped.", name)
-                continue  # Skip to the next team if name or sport is missing
-            
-            league = team.get('league', None)
-            division = team.get('division', None)
-            location = team.get('location', None)
+            team_data_object = Team(
+                name=team.get('name'),
+                sport=team.get('sport'),
+                league=team.get('league'),
+                division=team.get('division'),
+                location=team.get('location'),
+                social_media=SocialMedia(
+                    instagram=team.get('social_media', {}).get('instagram'),
+                    facebook=team.get('social_media', {}).get('facebook'),
+                    youtube=team.get('social_media', {}).get('youtube'),
+                    tiktok=team.get('social_media', {}).get('tiktok')
+                )
+            )
 
-            social_media = team.get('social_media', {})
-            instagram = social_media.get('instagram', None)
-            facebook = social_media.get('facebook', None)
-            youtube = social_media.get('youtube', None)
-            tiktok = social_media.get('tiktok', None)
+            if not team_data_object.name or not team_data_object.sport:
+                logging.error("Team '%s': name or sport not found - crawling for this team skipped.", team_data_object.name)
+                continue
             
-            new_team = Team(name, sport, league, division, location, SocialMedia(instagram, facebook, youtube, tiktok))
-            self.teams.append(new_team)
+            self.teams.append(team_data_object)
 
 
 def idle_to_hide_crawling_bot(config: ConfigHandler):
@@ -97,66 +103,8 @@ def idle_to_hide_crawling_bot(config: ConfigHandler):
     time.sleep(time_to_idle)
 
 
-def crawl_social_media(session: requests.Session, team: Team):
-    """Crawl data for all social media profiles of a team."""
-    crawled_data = {}
-
-    for platform, profile in team.social_media.__dict__.items():
-        if profile:
-            try:
-                crawler_class = {
-                    'instagram': InstagramCrawler,
-                    'facebook': FacebookCrawler,
-                    'youtube': YoutubeCrawler,
-                    'tiktok': TiktokCrawler
-                }[platform]
-
-                crawler = crawler_class(session)
-                crawled_data[platform] = json.loads(crawler.crawl(team.name, profile))
-
-            except Exception as e:
-                logging.error("Error crawling data from %s for profile '%s': %s", platform.capitalize(), profile, str(e))
-    
-    return crawled_data
-
-
-def crawl_teams(session: requests.Session, config: ConfigHandler):
-    """Crawl data from Wikipedia for all locations defined in the config."""
-    crawling_durations = []
-    crawled_data = []
-
-    for team in config.teams:
-        start_time = time.time()
-
-        team_data = {
-            "name": team.name,
-            "sport": team.sport,
-            "league": team.league,
-            "division": team.division,
-            "location": team.location,
-        }
-
-        # actual crawling happens here
-        # =====================================================================
-        team_data.update(crawl_social_media(session, team))
-        crawled_data.append(team_data)
-
-        idle_to_hide_crawling_bot(config)
-        # =====================================================================
-
-        duration = time.time() - start_time
-        crawling_durations.append(duration)
-
-        locations_left_for_crawling = len(config.teams) - len(crawling_durations)
-        logging.info("%s/%s locations crawled.", len(crawling_durations), len(config.teams))
-
-        if crawling_durations:
-            avg_duration = sum(crawling_durations) / len(crawling_durations)
-            time_left = int(locations_left_for_crawling * avg_duration)
-            if time_left > 0:
-                logging.info("Remaining runtime: %s", time_string(time_left))
-
-    # Save all location data to a JSON file
+def save_crawled_data(crawled_data: list):
+    """Save all team data to a JSON file."""
     current_date = datetime.now().strftime("%Y%m%d")
     file_name = f"{current_date}_teams_crawl.json"
 
@@ -165,10 +113,43 @@ def crawl_teams(session: requests.Session, config: ConfigHandler):
 
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(crawled_data, f, ensure_ascii=False, indent=4)
-    logging.info("crawled location data saved to '%s'.", file_path)
+    logging.info("Crawled team data saved to '%s'.", file_path)
+
+
+def crawl_instagram(current_driver: WebDriver, config: ConfigHandler):
+    """Crawl data from social media for all teams defined in the config."""
+    crawled_instagram_data = []
+
+    crawler = InstagramCrawler(current_driver)
+    crawler.login("ralph.boehm.1", "hiwqo2-famced-Jajwur")
+
+    for team in config.teams:
+        if team.social_media.instagram:
+            crawled_instagram_data.append(crawler.crawl( team.name, team.social_media.instagram))
+            idle_to_hide_crawling_bot(config)
+
+    return crawled_instagram_data
+
+
+def crawl_social_media(current_driver: WebDriver, config: ConfigHandler):
+    """Crawl data from social media for all teams defined in the config."""
+    crawl_instagram(current_driver, config)
+    return
+
 
 # Load the config file and start crawling
-config = ConfigHandler(CONFIG_FILE_NAME)
+current_config = ConfigHandler(CONFIG_FILE_NAME)
 
-session = requests.Session()
-crawl_teams(session, config)
+user_profile_path = os.path.expanduser("~/Library/Application Support/Google/Chrome/Default")
+print(user_profile_path)
+
+chrome_options = Options()
+chrome_options.add_argument(f"user-agent={get_random_user_agent()}")
+chrome_options.add_argument(f"user-data-dir={user_profile_path}")
+
+chrome_service = Service('./_chromedriver/chromedriver')
+driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+driver.delete_all_cookies()
+
+crawl_social_media(driver, current_config)
+driver.quit()

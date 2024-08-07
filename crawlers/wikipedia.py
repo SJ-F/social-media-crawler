@@ -9,13 +9,6 @@ from utils.user_agents import get_random_user_agent
 
 BASE_URL = 'https://de.wikipedia.org/wiki/'
 
-def _get_value_from_table(soup, key: str) -> int:
-    """Extracts a numeric value from a Wikipedia table based on the provided key."""
-    for td in soup.find_all('td'):
-        if _is_key_match(td, key):
-            return _extract_value(td)
-    return 0
-
 def _is_key_match(td, key: str) -> bool:
     """Checks if the key matches the text in the <td> or any <a> tags within it."""
     return (re.match(r'^\s*' + re.escape(key) + r'\s*$', td.get_text(strip=True)) or
@@ -26,6 +19,13 @@ def _extract_value(td) -> int:
     value = td.find_next_sibling('td').text.split(' ')[0]
     number_string = value.replace('\u00a0Einwohner', '').replace('.', '')
     return int(number_string) if number_string else 0
+
+def _get_value_from_table(soup, key: str) -> int:
+    """Extracts a numeric value from a Wikipedia table based on the provided key."""
+    for td in soup.find_all('td'):
+        if _is_key_match(td, key):
+            return _extract_value(td)
+    return 0
 
 class WikipediaCrawler:
     def __init__(self, session: requests.Session):

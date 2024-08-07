@@ -28,21 +28,22 @@ class FacebookCrawler:
         self.session = session
 
     def crawl(self, name: str, profile: str) -> str:
-        """Crawl data for a profile from Facebook."""
+        """Crawl data for a team from Facebook."""
         self.session.headers.update({'User-Agent': get_random_user_agent()})
         
         logging.info("Crawling data for '%s' from '%s'", name, BASE_URL + profile)
-        status_code = 200
+        return
 
-        if status_code == 200:
-            follower = get_dummy_data(BASE_URL + profile)
+        response = self.session.get(BASE_URL + profile)
+
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.content, 'html.parser')
+            print(soup)
 
             result = {
-                "profile": profile,
-                "follower": follower
             }
 
             logging.info("Result: %s", result)
             return json.dumps(result, ensure_ascii=False)
 
-        logging.error("Failed to retrieve '%s'. Status code: %d", BASE_URL + profile, status_code)
+        logging.error("Failed to retrieve '%s'. Status code: %d", BASE_URL + profile, response.status_code)

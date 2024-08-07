@@ -28,11 +28,11 @@
     "locations": [
         {
             "name": "Kempten",
-            "wikipedia_url": "Kempten"
+            "wikipedia": "Kempten"
         },
         {
             "name": "Ravensburg",
-            "wikipedia_url": "Ravensburg"
+            "wikipedia": "Ravensburg"
         }
     ]
 }
