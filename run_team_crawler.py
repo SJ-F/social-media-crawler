@@ -116,29 +116,24 @@ def save_crawled_data(crawled_data: list):
     logging.info("Crawled team data saved to '%s'.", file_path)
 
 
-def crawl_instagram(current_driver: WebDriver, config: ConfigHandler):
+def crawl_instagram(current_driver: WebDriver, current_config: ConfigHandler):
     """Crawl data from social media for all teams defined in the config."""
     crawled_instagram_data = []
 
     crawler = InstagramCrawler(current_driver)
     crawler.login("ralph.boehm.1", "hiwqo2-famced-Jajwur")
 
-    for team in config.teams:
+    random.shuffle(current_config.teams)
+    for team in current_config.teams:
         if team.social_media.instagram:
             crawled_instagram_data.append(crawler.crawl( team.name, team.social_media.instagram))
-            idle_to_hide_crawling_bot(config)
+            idle_to_hide_crawling_bot(current_config)
 
     return crawled_instagram_data
 
 
-def crawl_social_media(current_driver: WebDriver, config: ConfigHandler):
-    """Crawl data from social media for all teams defined in the config."""
-    crawl_instagram(current_driver, config)
-    return
-
-
 # Load the config file and start crawling
-current_config = ConfigHandler(CONFIG_FILE_NAME)
+config = ConfigHandler(CONFIG_FILE_NAME)
 
 user_profile_path = os.path.expanduser("~/Library/Application Support/Google/Chrome/Default")
 print(user_profile_path)
@@ -151,5 +146,5 @@ chrome_service = Service('./_chromedriver/chromedriver')
 driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 driver.delete_all_cookies()
 
-crawl_social_media(driver, current_config)
+crawl_instagram(driver, config)
 driver.quit()
