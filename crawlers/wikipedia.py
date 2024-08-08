@@ -1,8 +1,8 @@
 import logging
-import requests
 import re
 import json
 
+import requests
 from bs4 import BeautifulSoup
 
 from utils.user_agents import get_random_user_agent
@@ -34,7 +34,7 @@ class WikipediaCrawler:
     def crawl(self, city: str, url: str) -> str:
         """Crawl data for a city from Wikipedia."""
         self.session.headers.update({'User-Agent': get_random_user_agent()})
-        
+
         logging.info("Crawling data for '%s' from '%s'", city, BASE_URL + url)
         response = self.session.get(BASE_URL + url)
 
@@ -53,4 +53,7 @@ class WikipediaCrawler:
             logging.info("Result: %s", result)
             return json.dumps(result, ensure_ascii=False)
 
-        logging.error("Failed to retrieve '%s'. Status code: %d", BASE_URL + url, response.status_code)
+        logging.error("Failed to retrieve '%s'. Status code: %d",
+                        BASE_URL + url,
+                        response.status_code
+                    )

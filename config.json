@@ -10,8 +10,8 @@
             "division": "",
             "location": "",
             "social_media": {
-                "instagram_url": "germanfootballleague",
-                "facebook_url": ""
+                "instagram": "germanfootballleague",
+                "facebook": ""
             }
         },
         {
@@ -21,8 +21,8 @@
             "division": "Nord",
             "location": "Berlin",
             "social_media": {
-                "instagram_url": "berlinadler",
-                "facebook_url": ""
+                "instagram": "berlinadler",
+                "facebook": ""
             }
         },
         {
@@ -32,8 +32,8 @@
             "division": "Nord",
             "location": "Berlin",
             "social_media": {
-                "instagram_url": "berlinrebels",
-                "facebook_url": ""
+                "instagram": "berlinrebels",
+                "facebook": ""
             }
         },
         {
@@ -43,8 +43,8 @@
             "division": "Nord",
             "location": "Dresden",
             "social_media": {
-                "instagram_url": "dresdenmonarchs",
-                "facebook_url": ""
+                "instagram": "dresdenmonarchs",
+                "facebook": ""
             }
         },
         {
@@ -54,8 +54,8 @@
             "division": "Nord",
             "location": "Hildesheim",
             "social_media": {
-                "instagram_url": "hildesheiminvaders",
-                "facebook_url": ""
+                "instagram": "hildesheiminvaders",
+                "facebook": ""
             }
         },
         {
@@ -65,8 +65,8 @@
             "division": "Nord",
             "location": "Kiel",
             "social_media": {
-                "instagram_url": "kielbaltichurricanes",
-                "facebook_url": ""
+                "instagram": "kielbaltichurricanes",
+                "facebook": ""
             }
         },
         {
@@ -76,8 +76,8 @@
             "division": "Nord",
             "location": "Braunschweig",
             "social_media": {
-                "instagram_url": "newyorkerlions",
-                "facebook_url": ""
+                "instagram": "newyorkerlions",
+                "facebook": ""
             }
         },
         {
@@ -87,8 +87,8 @@
             "division": "Nord",
             "location": "Paderborn",
             "social_media": {
-                "instagram_url": "paderborndolphins",
-                "facebook_url": ""
+                "instagram": "paderborndolphins",
+                "facebook": ""
             }
         },
         {
@@ -98,8 +98,8 @@
             "division": "Nord",
             "location": "Potsdam",
             "social_media": {
-                "instagram_url": "potsdamroyals",
-                "facebook_url": ""
+                "instagram": "potsdamroyals",
+                "facebook": ""
             }
         },
         {
@@ -109,8 +109,8 @@
             "division": "Süd",
             "location": "Kempten",
             "social_media": {
-                "instagram_url": "allgaeucomets",
-                "facebook_url": ""
+                "instagram": "allgaeucomets",
+                "facebook": ""
             }
         },
         {
@@ -120,8 +120,8 @@
             "division": "Süd",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "ifmrazorbacks",
-                "facebook_url": ""
+                "instagram": "ifmrazorbacks",
+                "facebook": ""
             }
         },
         {
@@ -131,8 +131,8 @@
             "division": "Süd",
             "location": "Kirchdorf (Inn)",
             "social_media": {
-                "instagram_url": "kirchdorf.wildcats",
-                "facebook_url": ""
+                "instagram": "kirchdorf.wildcats",
+                "facebook": ""
             }
         },
         {
@@ -142,8 +142,8 @@
             "division": "Süd",
             "location": "München",
             "social_media": {
-                "instagram_url": "munichcowboys",
-                "facebook_url": ""
+                "instagram": "munichcowboys",
+                "facebook": ""
             }
         },
         {
@@ -153,8 +153,8 @@
             "division": "Süd",
             "location": "Saarbrücken",
             "social_media": {
-                "instagram_url": "saarlandhurricanes",
-                "facebook_url": ""
+                "instagram": "saarlandhurricanes",
+                "facebook": ""
             }
         },
         {
@@ -164,8 +164,8 @@
             "division": "Süd",
             "location": "Schwäbisch Hall",
             "social_media": {
-                "instagram_url": "unicornsfootball",
-                "facebook_url": ""
+                "instagram": "unicornsfootball",
+                "facebook": ""
             }
         },
         {
@@ -175,8 +175,8 @@
             "division": "Süd",
             "location": "Straubing",
             "social_media": {
-                "instagram_url": "straubingspidersofficial",
-                "facebook_url": ""
+                "instagram": "straubingspidersofficial",
+                "facebook": ""
             }
         },
         {
@@ -186,8 +186,8 @@
             "division": "Nord",
             "location": "Bielefeld",
             "social_media": {
-                "instagram_url": "bulldogsbielefeld",
-                "facebook_url": ""
+                "instagram": "bulldogsbielefeld",
+                "facebook": ""
             }
         },
         {
@@ -197,8 +197,8 @@
             "division": "Nord",
             "location": "Cottbus",
             "social_media": {
-                "instagram_url": "cottbus.crayfish",
-                "facebook_url": ""
+                "instagram": "cottbus.crayfish",
+                "facebook": ""
             }
         },
         {
@@ -208,8 +208,8 @@
             "division": "Nord",
             "location": "Düsseldorf",
             "social_media": {
-                "instagram_url": "duesseldorfpanther",
-                "facebook_url": ""
+                "instagram": "duesseldorfpanther",
+                "facebook": ""
             }
         },
         {
@@ -219,8 +219,8 @@
             "division": "Nord",
             "location": "Hamburg",
             "social_media": {
-                "instagram_url": "hamburgpioneers",
-                "facebook_url": ""
+                "instagram": "hamburgpioneers",
+                "facebook": ""
             }
         },
         {
@@ -230,8 +230,8 @@
             "division": "Nord",
             "location": "Langenfeld",
             "social_media": {
-                "instagram_url": "langenfeld.longhorns",
-                "facebook_url": ""
+                "instagram": "langenfeld.longhorns",
+                "facebook": ""
             }
         },
         {
@@ -241,8 +241,8 @@
             "division": "Nord",
             "location": "Lübeck",
             "social_media": {
-                "instagram_url": "luebeckcougars",
-                "facebook_url": ""
+                "instagram": "luebeckcougars",
+                "facebook": ""
             }
         },
         {
@@ -252,8 +252,8 @@
             "division": "Nord",
             "location": "Oldenburg",
             "social_media": {
-                "instagram_url": "oldenburgknights",
-                "facebook_url": ""
+                "instagram": "oldenburgknights",
+                "facebook": ""
             }
         },
         {
@@ -263,8 +263,8 @@
             "division": "Nord",
             "location": "Rostock",
             "social_media": {
-                "instagram_url": "rostockgriffins",
-                "facebook_url": ""
+                "instagram": "rostockgriffins",
+                "facebook": ""
             }
         },
         {
@@ -274,8 +274,8 @@
             "division": "Süd",
             "location": "Albershausen",
             "social_media": {
-                "instagram_url": "albershausencrusaders",
-                "facebook_url": ""
+                "instagram": "albershausencrusaders",
+                "facebook": ""
             }
         },
         {
@@ -285,8 +285,8 @@
             "division": "Süd",
             "location": "Fürstenfeldbruck",
             "social_media": {
-                "instagram_url": "fursty_razorbacks",
-                "facebook_url": ""
+                "instagram": "fursty_razorbacks",
+                "facebook": ""
             }
         },
         {
@@ -296,8 +296,8 @@
             "division": "Süd",
             "location": "Gießen",
             "social_media": {
-                "instagram_url": "giessengoldendragons",
-                "facebook_url": ""
+                "instagram": "giessengoldendragons",
+                "facebook": ""
             }
         },
         {
@@ -307,8 +307,8 @@
             "division": "Süd",
             "location": "Montabaur",
             "social_media": {
-                "instagram_url": "fightingfarmersmontabaur",
-                "facebook_url": ""
+                "instagram": "fightingfarmersmontabaur",
+                "facebook": ""
             }
         },
         {
@@ -318,8 +318,8 @@
             "division": "Süd",
             "location": "Pforzheim",
             "social_media": {
-                "instagram_url": "pforzheimwilddogs",
-                "facebook_url": ""
+                "instagram": "pforzheimwilddogs",
+                "facebook": ""
             }
         },
         {
@@ -329,8 +329,8 @@
             "division": "Süd",
             "location": "Regensburg",
             "social_media": {
-                "instagram_url": "regensburg_phoenix",
-                "facebook_url": ""
+                "instagram": "regensburg_phoenix",
+                "facebook": ""
             }
         },
         {
@@ -340,8 +340,8 @@
             "division": "",
             "location": "",
             "social_media": {
-                "instagram_url": "europeanleagueoffootball",
-                "facebook_url": ""
+                "instagram": "europeanleagueoffootball",
+                "facebook": ""
             }
         },
         {
@@ -351,8 +351,8 @@
             "division": "",
             "location": "Barcelona",
             "social_media": {
-                "instagram_url": "barcelona.dragons",
-                "facebook_url": ""
+                "instagram": "barcelona.dragons",
+                "facebook": ""
             }
         },
         {
@@ -362,8 +362,8 @@
             "division": "",
             "location": "Berlin",
             "social_media": {
-                "instagram_url": "berlinthunderfootball",
-                "facebook_url": ""
+                "instagram": "berlinthunderfootball",
+                "facebook": ""
             }
         },
         {
@@ -373,8 +373,8 @@
             "division": "",
             "location": "Köln",
             "social_media": {
-                "instagram_url": "centurionscologne",
-                "facebook_url": ""
+                "instagram": "centurionscologne",
+                "facebook": ""
             }
         },
         {
@@ -384,8 +384,8 @@
             "division": "",
             "location": "Székesfehérvár",
             "social_media": {
-                "instagram_url": "fehervarenthronersofficial",
-                "facebook_url": ""
+                "instagram": "fehervarenthronersofficial",
+                "facebook": ""
             }
         },
         {
@@ -395,8 +395,8 @@
             "division": "",
             "location": "Frankfurt (Main)",
             "social_media": {
-                "instagram_url": "frankfurtgalaxy",
-                "facebook_url": ""
+                "instagram": "frankfurtgalaxy",
+                "facebook": ""
             }
         },
         {
@@ -406,8 +406,8 @@
             "division": "",
             "location": "Hamburg",
             "social_media": {
-                "instagram_url": "hamburgseadevils",
-                "facebook_url": ""
+                "instagram": "hamburgseadevils",
+                "facebook": ""
             }
         },
         {
@@ -417,8 +417,8 @@
             "division": "",
             "location": "Zürich",
             "social_media": {
-                "instagram_url": "helvetic_mercenaries",
-                "facebook_url": ""
+                "instagram": "helvetic_mercenaries",
+                "facebook": ""
             }
         },
         {
@@ -428,8 +428,8 @@
             "division": "",
             "location": "Madrid",
             "social_media": {
-                "instagram_url": "madrid.bravos",
-                "facebook_url": ""
+                "instagram": "madrid.bravos",
+                "facebook": ""
             }
         },
         {
@@ -439,8 +439,8 @@
             "division": "",
             "location": "Mailand",
             "social_media": {
-                "instagram_url": "seamenmilano",
-                "facebook_url": ""
+                "instagram": "seamenmilano",
+                "facebook": ""
             }
         },
         {
@@ -450,8 +450,8 @@
             "division": "",
             "location": "München",
             "social_media": {
-                "instagram_url": "munichravens",
-                "facebook_url": ""
+                "instagram": "munichravens",
+                "facebook": ""
             }
         },
         {
@@ -461,8 +461,8 @@
             "division": "",
             "location": "Breslau",
             "social_media": {
-                "instagram_url": "pantherswroclaw",
-                "facebook_url": ""
+                "instagram": "pantherswroclaw",
+                "facebook": ""
             }
         },
         {
@@ -472,8 +472,8 @@
             "division": "",
             "location": "Paris",
             "social_media": {
-                "instagram_url": "parismusketeers",
-                "facebook_url": ""
+                "instagram": "parismusketeers",
+                "facebook": ""
             }
         },
         {
@@ -483,8 +483,8 @@
             "division": "",
             "location": "Prag",
             "social_media": {
-                "instagram_url": "praguelions",
-                "facebook_url": ""
+                "instagram": "praguelions",
+                "facebook": ""
             }
         },
         {
@@ -494,8 +494,8 @@
             "division": "",
             "location": "Innsbruck",
             "social_media": {
-                "instagram_url": "raiderstirol_football",
-                "facebook_url": ""
+                "instagram": "raiderstirol_football",
+                "facebook": ""
             }
         },
         {
@@ -505,8 +505,8 @@
             "division": "",
             "location": "Düsseldorf",
             "social_media": {
-                "instagram_url": "rheinfire",
-                "facebook_url": ""
+                "instagram": "rheinfire",
+                "facebook": ""
             }
         },
         {
@@ -516,8 +516,8 @@
             "division": "",
             "location": "Stuttgart",
             "social_media": {
-                "instagram_url": "stuttgartsurge",
-                "facebook_url": ""
+                "instagram": "stuttgartsurge",
+                "facebook": ""
             }
         },
         {
@@ -527,8 +527,8 @@
             "division": "",
             "location": "Wien",
             "social_media": {
-                "instagram_url": "viennavikings",
-                "facebook_url": ""
+                "instagram": "viennavikings",
+                "facebook": ""
             }
         },
         {
@@ -538,8 +538,8 @@
             "division": "",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "ravensburg_towerstars",
-                "facebook_url": ""
+                "instagram": "ravensburg_towerstars",
+                "facebook": ""
             }
         },
         {
@@ -549,8 +549,8 @@
             "division": "",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "fv1893ravensburg",
-                "facebook_url": ""
+                "instagram": "fv1893ravensburg",
+                "facebook": ""
             }
         },
         {
@@ -560,8 +560,8 @@
             "division": "",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "judo_ravensburg",
-                "facebook_url": ""
+                "instagram": "judo_ravensburg",
+                "facebook": ""
             }
         },
         {
@@ -571,175 +571,175 @@
             "division": "",
             "location": "Ravensburg",
             "social_media": {
-                "instagram_url": "tsb_ravensburg",
-                "facebook_url": ""
+                "instagram": "tsb_ravensburg",
+                "facebook": ""
             }
         }
     ],
     "locations": [
         {
             "name": "Berlin",
-            "wikipedia_url": "Berlin"
+            "wikipedia": "Berlin"
         },
         {
             "name": "Dresden",
-            "wikipedia_url": "Dresden"
+            "wikipedia": "Dresden"
         },
         {
             "name": "Hildesheim",
-            "wikipedia_url": "Hildesheim"
+            "wikipedia": "Hildesheim"
         },
         {
             "name": "Kiel",
-            "wikipedia_url": "Kiel"
+            "wikipedia": "Kiel"
         },
         {
             "name": "Braunschweig",
-            "wikipedia_url": "Braunschweig"
+            "wikipedia": "Braunschweig"
         },
         {
             "name": "Paderborn",
-            "wikipedia_url": "Paderborn"
+            "wikipedia": "Paderborn"
         },
         {
             "name": "Potsdam",
-            "wikipedia_url": "Potsdam"
+            "wikipedia": "Potsdam"
         },
         {
             "name": "Kempten",
-            "wikipedia_url": "Kempten"
+            "wikipedia": "Kempten"
         },
         {
             "name": "Ravensburg",
-            "wikipedia_url": "Ravensburg"
+            "wikipedia": "Ravensburg"
         },
         {
             "name": "Kirchdorf (Inn)",
-            "wikipedia_url": "Kirchdorf_am_Inn_(Landkreis_Rottal-Inn)"
+            "wikipedia": "Kirchdorf_am_Inn_(Landkreis_Rottal-Inn)"
         },
         {
             "name": "München",
-            "wikipedia_url": "München"
+            "wikipedia": "München"
         },
         {
             "name": "Saarbrücken",
-            "wikipedia_url": "Saarbrücken"
+            "wikipedia": "Saarbrücken"
         },
         {
             "name": "Schwäbisch Hall",
-            "wikipedia_url": "Schwäbisch_Hall"
+            "wikipedia": "Schwäbisch_Hall"
         },
         {
             "name": "Straubing",
-            "wikipedia_url": "Straubing"
+            "wikipedia": "Straubing"
         },
         {
             "name": "Bielefeld",
-            "wikipedia_url": "Bielefeld"
+            "wikipedia": "Bielefeld"
         },
         {
             "name": "Cottbus",
-            "wikipedia_url": "Cottbus"
+            "wikipedia": "Cottbus"
         },
         {
             "name": "Düsseldorf",
-            "wikipedia_url": "Düsseldorf"
+            "wikipedia": "Düsseldorf"
         },
         {
             "name": "Hamburg",
-            "wikipedia_url": "Hamburg"
+            "wikipedia": "Hamburg"
         },
         {
             "name": "Langenfeld",
-            "wikipedia_url": "Langenfeld"
+            "wikipedia": "Langenfeld"
         },
         {
             "name": "Lübeck",
-            "wikipedia_url": "Lübeck"
+            "wikipedia": "Lübeck"
         },
         {
             "name": "Oldenburg",
-            "wikipedia_url": "Oldenburg"
+            "wikipedia": "Oldenburg"
         },
         {
             "name": "Rostock",
-            "wikipedia_url": "Rostock"
+            "wikipedia": "Rostock"
         },
         {
             "name": "Albershausen",
-            "wikipedia_url": "Albershausen"
+            "wikipedia": "Albershausen"
         },
         {
             "name": "Fürstenfeldbruck",
-            "wikipedia_url": "Fürstenfeldbruck"
+            "wikipedia": "Fürstenfeldbruck"
         },
         {
             "name": "Gießen",
-            "wikipedia_url": "Gießen"
+            "wikipedia": "Gießen"
         },
         {
             "name": "Montabaur",
-            "wikipedia_url": "Montabaur"
+            "wikipedia": "Montabaur"
         },
         {
             "name": "Pforzheim",
-            "wikipedia_url": "Pforzheim"
+            "wikipedia": "Pforzheim"
         },
         {
             "name": "Regensburg",
-            "wikipedia_url": "Regensburg"
+            "wikipedia": "Regensburg"
         },
         {
             "name": "Barcelona",
-            "wikipedia_url": "Barcelona"
+            "wikipedia": "Barcelona"
         },
         {
             "name": "Köln",
-            "wikipedia_url": "Köln"
+            "wikipedia": "Köln"
         },
         {
             "name": "Székesfehérvár",
-            "wikipedia_url": "Székesfehérvár"
+            "wikipedia": "Székesfehérvár"
         },
         {
             "name": "Frankfurt (Main)",
-            "wikipedia_url": "Frankfurt_am_Main"
+            "wikipedia": "Frankfurt_am_Main"
         },
         {
             "name": "Zürich",
-            "wikipedia_url": "Zürich"
+            "wikipedia": "Zürich"
         },
         {
             "name": "Madrid",
-            "wikipedia_url": "Madrid"
+            "wikipedia": "Madrid"
         },
         {
             "name": "Mailand",
-            "wikipedia_url": "Mailand"
+            "wikipedia": "Mailand"
         },
         {
             "name": "Breslau",
-            "wikipedia_url": "Breslau"
+            "wikipedia": "Breslau"
         },
         {
             "name": "Paris",
-            "wikipedia_url": "Paris"
+            "wikipedia": "Paris"
         },
         {
             "name": "Prag",
-            "wikipedia_url": "Prag"
+            "wikipedia": "Prag"
         },
         {
             "name": "Innsbruck",
-            "wikipedia_url": "Innsbruck"
+            "wikipedia": "Innsbruck"
         },
         {
             "name": "Stuttgart",
-            "wikipedia_url": "Stuttgart"
+            "wikipedia": "Stuttgart"
         },
         {
             "name": "Wien",
-            "wikipedia_url": "Wien"
+            "wikipedia": "Wien"
         }
     ]
 }

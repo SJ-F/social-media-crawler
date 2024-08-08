@@ -1,0 +1,192 @@
+[
+    {
+        "name": "München",
+        "population": 1510378,
+        "population_density": 4861
+    },
+    {
+        "name": "Székesfehérvár",
+        "population": 94893,
+        "population_density": 555
+    },
+    {
+        "name": "Gießen",
+        "population": 94996,
+        "population_density": 1308
+    },
+    {
+        "name": "Düsseldorf",
+        "population": 631217,
+        "population_density": 2903
+    },
+    {
+        "name": "Hildesheim",
+        "population": 102325,
+        "population_density": 1109
+    },
+    {
+        "name": "Montabaur",
+        "population": 14595,
+        "population_density": 432
+    },
+    {
+        "name": "Dresden",
+        "population": 566222,
+        "population_density": 1724
+    },
+    {
+        "name": "Ravensburg",
+        "population": 51482,
+        "population_density": 559
+    },
+    {
+        "name": "Langenfeld",
+        "population": 0,
+        "population_density": 0
+    },
+    {
+        "name": "Breslau",
+        "population": 672,
+        "population_density": 2191
+    },
+    {
+        "name": "Rostock",
+        "population": 209920,
+        "population_density": 1157
+    },
+    {
+        "name": "Kiel",
+        "population": 248873,
+        "population_density": 2098
+    },
+    {
+        "name": "Paderborn",
+        "population": 155749,
+        "population_density": 867
+    },
+    {
+        "name": "Oldenburg",
+        "population": 0,
+        "population_density": 0
+    },
+    {
+        "name": "Saarbrücken",
+        "population": 183509,
+        "population_density": 1095
+    },
+    {
+        "name": "Stuttgart",
+        "population": 632865,
+        "population_density": 3053
+    },
+    {
+        "name": "Berlin",
+        "population": 3782202,
+        "population_density": 4240
+    },
+    {
+        "name": "Bielefeld",
+        "population": 338410,
+        "population_density": 1307
+    },
+    {
+        "name": "Kirchdorf (Inn)",
+        "population": 5425,
+        "population_density": 171
+    },
+    {
+        "name": "Albershausen",
+        "population": 4460,
+        "population_density": 686
+    },
+    {
+        "name": "Braunschweig",
+        "population": 252066,
+        "population_density": 1308
+    },
+    {
+        "name": "Köln",
+        "population": 1087353,
+        "population_density": 2685
+    },
+    {
+        "name": "Barcelona",
+        "population": 1636193,
+        "population_density": 16660
+    },
+    {
+        "name": "Potsdam",
+        "population": 187119,
+        "population_density": 994
+    },
+    {
+        "name": "Mailand",
+        "population": 1349930,
+        "population_density": 0
+    },
+    {
+        "name": "Straubing",
+        "population": 49775,
+        "population_density": 736
+    },
+    {
+        "name": "Kempten",
+        "population": 70713,
+        "population_density": 1117
+    },
+    {
+        "name": "Hamburg",
+        "population": 1910160,
+        "population_density": 2530
+    },
+    {
+        "name": "Schwäbisch Hall",
+        "population": 41898,
+        "population_density": 402
+    },
+    {
+        "name": "Lübeck",
+        "population": 219044,
+        "population_density": 1023
+    },
+    {
+        "name": "Frankfurt (Main)",
+        "population": 775790,
+        "population_density": 3124
+    },
+    {
+        "name": "Madrid",
+        "population": 3280782,
+        "population_density": 5416
+    },
+    {
+        "name": "Cottbus",
+        "population": 100010,
+        "population_density": 604
+    },
+    {
+        "name": "Regensburg",
+        "population": 159465,
+        "population_density": 1972
+    },
+    {
+        "name": "Innsbruck",
+        "population": 132188,
+        "population_density": 1260
+    },
+    {
+        "name": "Prag",
+        "population": 1357326,
+        "population_density": 0
+    },
+    {
+        "name": "Fürstenfeldbruck",
+        "population": 38187,
+        "population_density": 1174
+    },
+    {
+        "name": "Pforzheim",
+        "population": 127849,
+        "population_density": 1305
+    }
+]

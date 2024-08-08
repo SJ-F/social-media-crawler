@@ -5,29 +5,34 @@ import logging
 import json
 import time
 import random
-
-import requests
-
 from dataclasses import dataclass
 from datetime import datetime
+
+
+import requests
 
 from crawlers.wikipedia import WikipediaCrawler
 from utils.time_format import split_seconds_into_hours_minutes_and_seconds as time_string
 
+# Constants
 DATA_DIR_NAME = 'data'
 LOCATION_DIR_NAME = 'locations'
-CONFIG_FILE_NAME = 'debug-config.json'
+CONFIG_FILE_NAME = 'config.json'
 
+# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 @dataclass
 class Location:
+    """Data class to represent a location with its name and Wikipedia URL."""
     name: str
     wikipedia: str
 
 
 class ConfigHandler:
+    """Class to handle configuration loading and validation."""
+
     def __init__(self, file_path: str):
         self.locations: list[Location] = []
         self.min_delay_in_seconds: int = 0
@@ -35,27 +40,43 @@ class ConfigHandler:
         self.load_config(file_path)
 
     def __str__(self) -> str:
-        locations_str = "Locations to crawl:\n\t- " + "\n\t- ".join(str(location) for location in self.locations)
-        delay_str = f"Delay between crawls: {self.min_delay_in_seconds} - {self.max_delay_in_seconds} seconds"
+        locations_str = (
+            "Locations to crawl:\n\t- " +
+            "\n\t- ".join(str(location) for location in self.locations)
+        )
+
+        delay_str = (
+            f"Delay between crawls: {self.min_delay_in_seconds} - "
+            f"{self.max_delay_in_seconds} seconds"
+        )
         return delay_str + "\n" + locations_str
 
     def load_config(self, file_name: str):
+        """Load configuration from a JSON file."""
         script_dir = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(script_dir, file_name)
 
         with open(file_path, 'r', encoding='utf-8') as file:
             config = json.load(file)
 
-        self.min_delay_in_seconds = self.validate_config_value(config.get('min_delay_in_seconds'), "Minimum delay")
-        self.max_delay_in_seconds = self.validate_config_value(config.get('max_delay_in_seconds'), "Maximum delay")
+        self.min_delay_in_seconds = self.validate_config_value(
+                                            config.get('min_delay_in_seconds'),
+                                            "Minimum delay")
+
+        self.max_delay_in_seconds = self.validate_config_value(
+                                        config.get('max_delay_in_seconds'),
+                                        "Maximum delay")
+
         self.load_locations(config.get('locations', []))
 
     def validate_config_value(self, value, name: str) -> int:
+        """Validate a configuration value."""
         if value is None:
             raise ValueError(f"{name} not found - crawling aborted.")
         return value
 
     def load_locations(self, locations_data: list):
+        """Load locations from the configuration data."""
         if not locations_data:
             raise ValueError("No locations found - crawling aborted.")
 
@@ -63,7 +84,8 @@ class ConfigHandler:
             name = location.get('name')
             wikipedia = location.get('wikipedia')
             if not name or not wikipedia:
-                logging.error("Location '%s': name or wikipedia not found - crawling for this location skipped.", name)
+                logging.error("Location '%s': name or Wikipedia not found - crawling skipped.",
+                                name)
             else:
                 self.locations.append(Location(name, wikipedia))
 
@@ -78,7 +100,7 @@ def idle_to_hide_crawling_bot(config: ConfigHandler):
 def crawl_wikipedia(session: requests.Session, name: str, url: str):
     """Crawl data for a single location from Wikipedia."""
     crawler = WikipediaCrawler(session)
-    
+
     try:
         return crawler.crawl(name, url)
     except Exception as e:
@@ -87,6 +109,7 @@ def crawl_wikipedia(session: requests.Session, name: str, url: str):
 
 
 def log_crawling_progress(crawling_durations: list, config: ConfigHandler):
+    """Log the progress of the crawling process."""
     locations_left_for_crawling = len(config.locations) - len(crawling_durations)
     logging.info("%s/%s locations crawled.", len(crawling_durations), len(config.locations))
 
@@ -115,6 +138,7 @@ def crawl_locations(session: requests.Session, config: ConfigHandler):
     crawling_durations = []
     crawled_data = []
 
+    random.shuffle(config.locations)
     for location in config.locations:
         start_time = time.time()
 
@@ -132,8 +156,13 @@ def crawl_locations(session: requests.Session, config: ConfigHandler):
     save_crawled_data(crawled_data)
 
 
-# Load the config file and start crawling
-current_config = ConfigHandler(CONFIG_FILE_NAME)
-current_session = requests.Session()
+def main():
+    """Main function to load config and start crawling."""
+    current_config = ConfigHandler(CONFIG_FILE_NAME)
+    current_session = requests.Session()
 
-crawl_locations(current_session, current_config)
+    crawl_locations(current_session, current_config)
+
+
+if __name__ == "__main__":
+    main()

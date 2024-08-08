@@ -13,8 +13,12 @@ from bs4 import BeautifulSoup
 
 BASE_URL = 'https://instagram.com/'
 
+USERNAME_INPUT_IDENTIFIER = "//input[@aria-label='Phone number, username or email address']"
+PASSWORD_INPUT_IDENTIFIER = "//input[@aria-label='Password']"
+
 
 def type_with_delay(input_field, text):
+    """Type text into a text field with a delay between each character."""
     for char in text:
         input_field.send_keys(char)
         time.sleep(random.uniform(0.1, 0.5))
@@ -22,7 +26,7 @@ def type_with_delay(input_field, text):
 
 def _get_value_from_page(soup, key: str) -> str:
     """Extract the value from the page for the defined button 'key'."""
-    
+
     def _is_key_match(element, key: str) -> bool:
         """Checks if the key matches the text in the element"""
         normalized_key = key.strip().lower()
@@ -67,29 +71,31 @@ def _get_value_from_page(soup, key: str) -> str:
 
 
 class InstagramCrawler:
+    """Class to crawl data from Instagram."""
     def __init__(self, driver: WebDriver):
         self.driver = driver
 
     def login(self, username: str, password: str):
+        """Log in to Instagram with the provided username and password."""
         logging.info("Log in to Instagram with user '%s'", username)
-        
+
         self.driver.get(BASE_URL)
         time.sleep(random.uniform(10, 15))
-        
+
         try:
             username_input = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//input[@aria-label='Phone number, username or email address']"))
+                EC.presence_of_element_located((By.XPATH, USERNAME_INPUT_IDENTIFIER))
             )
-            
+
             password_input = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//input[@aria-label='Password']"))
+                EC.presence_of_element_located((By.XPATH, PASSWORD_INPUT_IDENTIFIER))
             )
-            
+
         except Exception as e:
             logging.debug("An error occurred while crawling: %s", str(e))
-            logging.info("The login input fields are not present. Probably the user is already loged in.")
+            logging.info("The login input fields are not present. Login skipped")
             return
-        
+
         type_with_delay(username_input, username)
         time.sleep(random.uniform(1, 3))
 
@@ -103,7 +109,7 @@ class InstagramCrawler:
     def crawl(self, name: str, profile: str) -> str:
         """Crawl data for a team from Instagram."""
         logging.info("Crawling data for '%s' from '%s'", name, BASE_URL + profile)
-        
+
         # open a new tab
         self.driver.execute_script("window.open('');")
         self.driver.switch_to.window(self.driver.window_handles[-1])
@@ -112,14 +118,12 @@ class InstagramCrawler:
         try:
             # Wait for the profile page to load and for a specific element to be present
             WebDriverWait(self.driver, 60).until(
-                EC.presence_of_element_located((By.TAG_NAME, 'button'))  # Wait for the body tag to be present
+                EC.presence_of_element_located((By.TAG_NAME, 'button'))
             )
 
-            # Get the page source after the page has rendered
             page_source = self.driver.page_source
             soup = BeautifulSoup(page_source, 'html.parser')
 
-            # Assuming get_value_from_page is defined elsewhere
             follower = _get_value_from_page(soup, 'followers')
             posts = _get_value_from_page(soup, 'posts')
 
@@ -138,11 +142,10 @@ class InstagramCrawler:
                 "follower": 0,
                 "posts": 0
             }
-        
+
 
         # close the tab
         self.driver.close()
         self.driver.switch_to.window(self.driver.window_handles[0])
 
         return [name, result]
-
